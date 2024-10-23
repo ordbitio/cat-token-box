@@ -64,3 +64,6 @@ metadata.json
 metadata*.json
 .npmrc
 loopmint.js
+
+# user files
+zen.json

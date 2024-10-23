@@ -13,6 +13,7 @@
     "node": ">=20"
   },
   "scripts": {
+    "docker:build:ordbit": "docker build -t ordbit-cat-server -f ./_Dockerfile .",
     "build": "turbo build",
     "postinstall": "sh ./scripts/patch.sh"
   },

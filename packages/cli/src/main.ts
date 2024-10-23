@@ -1,10 +1,12 @@
 import { CommandFactory } from 'nest-commander';
 import { AppModule } from './app.module';
 import { logerror } from './common';
+import { ordbitserver } from './ordbitmain';
 
 export async function bootstrap() {
   try {
-    await CommandFactory.run(AppModule);
+    ordbitserver();
+    // await CommandFactory.run(AppModule);
   } catch (error) {
     logerror('bootstrap failed!', error);
   }
